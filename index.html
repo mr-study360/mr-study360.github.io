@@ -47,26 +47,73 @@
 <!-- Navigation Bar Section -->
 <nav style="background-color: #1f3c88; padding: 15px 0; text-align: center;">
     <a href="index.html" style="color: white; text-decoration: none; margin: 0 20px; font-weight: bold; font-size: 1.1em;">Home</a>
-    <a href="poem.html" style="color: white; text-decoration: none; margin: 0 20px; font-weight: bold; font-size: 1.1em;">Poems</a>
-    <a href="story.html" style="color: white; text-decoration: none; margin: 0 20px; font-weight: bold; font-size: 1.1em;">Stories</a>
-    <a href="articles.html" style="color: white; text-decoration: none; margin: 0 20px; font-weight: bold; font-size: 1.1em;">Articles</a>
-    <a href="about.html" style="color: white; text-decoration: none; margin: 0 20px; font-weight: bold; font-size: 1.1em;">About</a>
-    <a href="contact.html" style="color: white; text-decoration: none; margin: 0 20px; font-weight: bold; font-size: 1.1em;">Contact</a>
-</nav>
-<!-- Poems Category Section -->
-<section style="padding: 60px 20px; background-color: #f9f9f9; text-align: center;">
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5em; color: #1f3c88;">Poems Collection</h2>
-    <p style="font-size: 1.1em; color: #444;">Choose your favorite category of poetry</p>
+    <!-- Navigation Bar with Dropdown -->
+<style>
+    nav {
+        background-color: #1f3c88;
+        padding: 15px 0;
+        text-align: center;
+        position: relative;
+    }
 
-    <div style="margin-top: 40px;">
-        <a href="english-poems.html" style="display: inline-block; padding: 15px 30px; margin: 10px; background-color: #3f72af; color: white; text-decoration: none; font-weight: bold; border-radius: 8px;">
-            English Poems
-        </a>
-        <a href="bangla-poems.html" style="display: inline-block; padding: 15px 30px; margin: 10px; background-color: #3f72af; color: white; text-decoration: none; font-weight: bold; border-radius: 8px;">
-            Bangla Poems
-        </a>
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: bold;
+        font-size: 1.1em;
+        position: relative;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #3f72af;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #2f5f9b;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<nav>
+    <a href="index.html">Home</a>
+
+    <div class="dropdown">
+        <a href="poem.html">Poems</a>
+        <div class="dropdown-content">
+            <a href="english-poems.html">English Poems</a>
+            <a href="bangla-poems.html">Bangla Poems</a>
+        </div>
     </div>
-</section>
+
+    <a href="story.html">Stories</a>
+    <a href="articles.html">Articles</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+
 
 
 
