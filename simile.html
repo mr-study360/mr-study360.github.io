@@ -1,29 +1,136 @@
+<!-- Stylish Front Page Header Section -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simile - A Figure of Speech</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>MR Universe - A Heaven of Words</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <style>
-  body {
-    background-color: #a8edea; /* dark aqua green */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-</style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #f0f4f8, #d9e4f5);
+            color: #333;
+        }
+
+        header {
+            text-align: left;
+            padding: 100px 20px;
+            background: linear-gradient(to right, #1f3c88, #3f72af);
+            color: black;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3em;
+            font-style: italic;
+            color: #e0e0e0;
+        }
+    </style>
 </head>
 <body>
-    <body class="simile-page">
+
+    <!-- Header Section -->
     <header>
-        <header onclick="location.reload()">
-        <h1>MR Universe</h1>
-    <header>
-    <h1>Simile</h1>
-  </header>
+        <header style="background-image: url('https://github.com/mr-study360/mr-study360.github.io/blob/main/images/pencils-1280558.jpg?raw=true'); background-size: cover; background-position: center center; height: 350px; color: black; text-align: left; padding: 50px 20px;">
+
+         <!-- Clickable Title (Reloads the Page) -->
+<h1>
+  <a href="index.html" style="color: white; text-decoration: none;">
+    MR Universe
+  </a>
+</h1>
+        <p>A scenic scene of the world and the thoughts</p>
     </header>
+   
+</body>
+</html>
+<!-- Navigation Bar Section -->
+
+    <!-- Navigation Bar with Dropdown -->
+<style>
+ 
+    nav {
+  background-color: #007f73; /* or any background color different from your page */
+  padding: 15px 30px;
+ text-align: center; /* Centers the links */
+}
+
+nav a {
+  color: white; /* Text color */
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 1.3em; /* Increased font size */
+  font-family: 'Segoe UI', sans-serif; /* Optional: different stylish font */
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffeb3b; /* Highlight on hover */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #3f72af;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #2f5f9b;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<nav>
+    
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+        <a href="english-literature.html">English Literature</a>
+        <div class="dropdown-content">
+            <a href="poems.html">Poems</a>
+            <a href="novels.html">Novels</a>
+            <a href="plays.html">Plays</a>
+            <a href="short-stories.html">Short Stories</a>
+            <a href="essays.html">Essays</a>
+            <a href="figures-of-speech.html">Figures of Speech</a>
+        </div>
+    </div>
+
+    <a href="grammar.html">Grammar</a>
+    <a href="bangla-literature.html">Bangla Literature</a>
+    <a href="literary-theories.html">Literary Theories</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
     
     <main>
         <section class="article-content">
