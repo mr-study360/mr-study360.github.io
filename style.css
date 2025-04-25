@@ -10,7 +10,7 @@ body {
 
 /* ===== Header Style with Image Background ===== */
 header {
-    background-image: url('path/to/your/header-image.jpg'); /* Add the image path */
+    background-image: url('https://github.com/mr-study360/mr-study360.github.io/blob/main/images/pencils-1280558.jpg?raw=true'); /* Add the image path */
     background-size: cover;
     background-position: center;
     color: white;
