@@ -7,10 +7,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #a0eacf; /* aqua green */
-      background-image: url('https://i.imgur.com/CxAGl08.png'); /* sample maple leaf pattern */
-      background-size: 100px;
-      background-repeat: repeat;
+      background-color: #a0eacf; /* aqua green background */
     }
 
     header {
@@ -32,21 +29,29 @@
       border-radius: 8px;
     }
 
-    main ul {
+    .grid-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
       list-style: none;
-      padding-left: 0;
+      padding: 0;
     }
 
-    main li a {
+    .grid-list li a {
       text-decoration: none;
       color: #007f73;
-      font-size: 1.3em;
+      font-size: 1.2em;
+      padding: 10px;
       display: block;
-      margin: 12px 0;
+      border: 1px solid #b0e0d0;
+      border-radius: 6px;
+      background-color: #f6fffb;
+      transition: 0.3s;
     }
 
-    main li a:hover {
-      text-decoration: underline;
+    .grid-list li a:hover {
+      background-color: #d6fff1;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     footer {
@@ -65,11 +70,14 @@
   </header>
 
   <main>
-    <ul>
+    <ul class="grid-list">
       <li><a href="figures/simile.html">Simile</a></li>
       <li><a href="figures/metaphor.html">Metaphor</a></li>
       <li><a href="figures/irony.html">Irony</a></li>
-      <!-- Add more links as needed -->
+      <li><a href="figures/personification.html">Personification</a></li>
+      <li><a href="figures/alliteration.html">Alliteration</a></li>
+      <li><a href="figures/hyperbole.html">Hyperbole</a></li>
+      <!-- Add more as needed -->
     </ul>
   </main>
 
