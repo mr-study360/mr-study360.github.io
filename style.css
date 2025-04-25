@@ -1,15 +1,86 @@
-.simile-page {
-    background-color: #e0f7f7; /* Aqua green */
+/* ===== Global Styles for All Pages ===== */
+body {
+    background-color: #80fff7; /* Light Aqua Green Background */
     font-family: 'Times New Roman', serif;
     margin-left: 1in;
     margin-right: 1in;
+    padding-top: 20px;
+    color: black; /* Text color black */
 }
 
-.simile-page h2 {
+/* ===== Header Style with Image Background ===== */
+header {
+    background-image: url('path/to/your/header-image.jpg'); /* Add the image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    height: 200px; /* Adjust header height */
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+    background-color: #00847b; /* Teal color */
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: black; /* Text color for nav links */
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Headings ===== */
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
     font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 8px;
 }
 
-.simile-page p {
+/* ===== Paragraphs ===== */
+p {
     font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
 }
+
+/* ===== Lists ===== */
+ul,
+ol {
+    font-size: 14px;
+    padding-left: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #bffffb; /* Light Blue */
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
 
