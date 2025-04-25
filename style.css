@@ -1,14 +1,8 @@
 .simile-page {
-    background-color: #e0f7f7; /* Light aqua green */
+    background-color: #e0f7f7; /* Aqua green */
     font-family: 'Times New Roman', serif;
-    font-size: 16px; /* Base font size */
     margin-left: 1in;
     margin-right: 1in;
-}
-
-/* Optional: Adjust specific heading sizes */
-.simile-page h1 {
-    font-size: 18px;
 }
 
 .simile-page h2 {
